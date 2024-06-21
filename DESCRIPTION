@@ -1,0 +1,16 @@
+Package: giftwrapr
+Type: Package
+Title: Generate Dockerfiles for R Projects
+Version: 0.1.0
+Authors@R: c(person("John", "Flournoy", email = "john-flournoy@pluralsight.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-1735-1221")))
+Description: The giftwrapr package helps users to generate Dockerfiles for R projects based on the rocker-verse images. It detects the R packages used in the project directory, creates a Dockerfile that installs those packages, and optionally builds the Docker image locally or triggers a remote build.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    utils,
+    stringr,
+    usethis
+Suggests: 
+    testthat
+RoxygenNote: 7.1.1

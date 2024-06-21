@@ -1,0 +1,8 @@
+# Exported functions
+export(detect_packages)
+export(generate_dockerfile)
+export(get_r_version)
+export(get_package_versions)
+
+# Imported functions
+importFrom(stringr, str_extract_all)
