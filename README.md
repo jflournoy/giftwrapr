@@ -21,7 +21,7 @@ The `generate_dockerfile` function generates a Dockerfile for your project. It d
 library(giftwrapr)
 
 # Generate Dockerfile for the project in the current directory
-generate_dockerfile(project_dir = getwd(), use_latest_versions = FALSE, r_version = get_r_version(), platform = "linux/amd64")
+generate_dockerfile()
 ```
 
 #### Parameters:
@@ -40,7 +40,7 @@ The `generate_docker_compose` function generates a `docker-compose.yml` file for
 library(giftwrapr)
 
 # Generate docker-compose.yml for the project in the current directory
-generate_docker_compose(project_dir = getwd(), service_name = "app", image_name = "my_image")
+generate_docker_compose()
 ```
 
 #### Parameters:
@@ -57,7 +57,7 @@ The `setup_docker_environment` function combines the functionality of `generate_
 library(giftwrapr)
 
 # Setup Docker environment for the project in the current directory
-setup_docker_environment(project_dir = getwd(), use_latest_versions = FALSE, r_version = get_r_version(), platform = "linux/amd64")
+setup_docker_environment()
 ```
 
 #### Parameters:
