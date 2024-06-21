@@ -2,11 +2,11 @@
 #'
 #' @param project_dir The path to the project directory (assumed to be the current working directory)
 #' @param use_latest_versions Logical indicating whether to use the latest versions
-#' @param r_version The R version to be used in the Docker image (default is "latest")
+#' @param r_version The R version to be used in the Docker image (default is the current R version)
 #' @param platform The platform to be used (default is "linux/amd64")
 #' @param service_name The name of the service (default is the project directory name)
 #' @export
-setup_docker_environment <- function(project_dir = getwd(), use_latest_versions = FALSE, r_version = "latest", platform = "linux/amd64", service_name = basename(normalizePath(project_dir))) {
+setup_docker_environment <- function(project_dir = getwd(), use_latest_versions = FALSE, r_version = get_r_version(), platform = "linux/amd64", service_name = basename(normalizePath(project_dir))) {
   image_name <- service_name
 
   # Generate Dockerfile

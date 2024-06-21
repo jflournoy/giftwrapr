@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  giftwrapr:
+    build: .
+    image: giftwrapr
+    volumes:
+      - .:/home/rstudio/project
+    ports:
+      - '8787:8787'
+    environment:
+      - DISABLE_AUTH=true

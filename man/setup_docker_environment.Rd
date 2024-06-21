@@ -7,7 +7,7 @@
 setup_docker_environment(
   project_dir = getwd(),
   use_latest_versions = FALSE,
-  r_version = "latest",
+  r_version = get_r_version(),
   platform = "linux/amd64",
   service_name = basename(normalizePath(project_dir))
 )
@@ -17,7 +17,7 @@ setup_docker_environment(
 
 \item{use_latest_versions}{Logical indicating whether to use the latest versions}
 
-\item{r_version}{The R version to be used in the Docker image (default is "latest")}
+\item{r_version}{The R version to be used in the Docker image (default is the current R version)}
 
 \item{platform}{The platform to be used (default is "linux/amd64")}
 
