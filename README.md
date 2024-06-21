@@ -13,8 +13,6 @@ devtools::install_github("[[username]]/giftwrapr")
 
 ## Usage
 
-(see "[Both at Once](#sec-both-at-once)" below for the easiest way)
-
 ### Generating a Dockerfile
 
 The `generate_dockerfile` function generates a Dockerfile for your project. It detects the R packages used in your project and includes them in the Dockerfile, ensuring the specified versions are installed.
@@ -51,7 +49,7 @@ generate_docker_compose(project_dir = getwd(), service_name = "app", image_name 
 -   `service_name`: The name of the service (default is "app").
 -   `image_name`: The name of the Docker image (default is the project directory name).
 
-### Both at Once {#sec-both-at-once}
+### Both at Once
 
 The `setup_docker_environment` function combines the functionality of `generate_dockerfile` and `generate_docker_compose`. It generates both the Dockerfile and the `docker-compose.yml` file for your project.
 
