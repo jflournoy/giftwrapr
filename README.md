@@ -99,3 +99,11 @@ Feel free to contribute to this project by submitting issues or pull requests.
 ### License
 
 This project is licensed under the MIT License.
+
+# Roadmap
+
+- [ ] Specify package install sources and versions
+- [ ] Specify base container
+- [ ] Test build
+- [ ] Remote build and deployment
+- [ ] Test reproducibility of wraped scripts
