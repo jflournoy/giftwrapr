@@ -8,7 +8,7 @@ To install `giftwrapr`, you can use the following commands:
 
 ``` r
 # Install the package from your local repository
-devtools::install_github("[[username]]/giftwrapr")
+devtools::install_github("jflournoy/giftwrapr")
 ```
 
 ## Usage
