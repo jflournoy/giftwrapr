@@ -1,6 +1,6 @@
 # giftwrapr 🎁
 
-The `giftwrapr` package helps you wrap your R projects in a Docker container based on [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) for distribution of extra-special easy-to-reproduce code (with a bow). It detects the packages used in your project and ensures that they are part of the Dockerfile for automatic installation. It detects your current version of these packages and R (at runtime) facilitating easy replication of your environment.
+The `giftwrapr` package helps you wrap your R projects in a Docker container based on [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) for distribution of extra-special easy-to-reproduce code (with a bow). It detects the packages used in your project and ensures that they are part of the Dockerfile for automatic installation. It detects your current version of these packages and R (at runtime) facilitating easy replication of your environment. See below for a very rudimentary introduction to why it might be cool, good, or fun to use Docker.
 
 ## Installation
 
@@ -99,6 +99,23 @@ Feel free to contribute to this project by submitting issues or pull requests.
 ### License
 
 This project is licensed under the MIT License.
+
+# ELI5 Docker
+
+With the help of an LLM (which I dragged kicking to a reasonably good analogy):
+
+Imagine you have a suitcase. In this suitcase, you pack everything you need for your trip: clothes, toiletries, gadgets, and even some snacks. No matter where you go, you just need to take this suitcase with you, and you'll have everything you need.
+
+A Docker container is like that suitcase for software. Inside the Docker container, you pack everything the application needs to run: the code, libraries, settings, and any other dependencies.
+
+Here’s what makes this suitcase (Docker container) special:
+
+1. Isolates the Application: Just like your suitcase keeps all your belongings separate from the outside world, a Docker container keeps the application and its dependencies separate from the host system. This means the application inside the container won’t be affected by the differences or issues in the host system.
+2. Simplifies Deployment: When you travel, you just pick up your packed suitcase and go. Similarly, with a Docker container, you can move the application to different computers or servers easily because everything it needs is already packed inside the container.
+3. Enhances Efficiency: Instead of carrying each item individually, your suitcase organizes and compacts everything into one place. Docker containers do the same by sharing the host system’s resources, making them more efficient and quicker to start than full virtual machines, which need their own separate resources.
+4. Ensures Consistency: Every time you open your suitcase, you find your belongings exactly as you packed them, no matter where you are. Similarly, a Docker container ensures that the application runs the same way everywhere. If it works on your computer inside the container, it will work the same way on any other computer or server using the same container.
+
+So, a Docker container is like a trusty suitcase for your software, keeping everything it needs in one place, making it easy to move, efficient to use, and consistent no matter where you go.
 
 # Roadmap
 
