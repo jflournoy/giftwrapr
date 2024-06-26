@@ -1,4 +1,4 @@
-# giftwrapr
+# giftwrapr 🎁
 
 The `giftwrapr` package helps you wrap your R projects in a Docker container based on [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) for distribution of extra-special easy-to-reproduce code (with a bow). It detects the packages used in your project and ensures that they are part of the Dockerfile for automatic installation. It detects your current version of these packages and R (at runtime) facilitating easy replication of your environment.
 
