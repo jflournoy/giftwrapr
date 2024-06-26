@@ -102,6 +102,8 @@ This project is licensed under the MIT License.
 
 # ELI5 Docker
 
+"It lets people run an analysis _you_ ran on their own computer, without making them installing everything you used&mdash;like a virtual desktop that includes the packages you need." &ndash;Carol, paraphrasing me better than I said it originally.
+
 With the help of an LLM (which I dragged kicking to a reasonably good analogy):
 
 Imagine you have a suitcase. In this suitcase, you pack everything you need for your trip: clothes, toiletries, gadgets, and even some snacks. No matter where you go, you just need to take this suitcase with you, and you'll have everything you need.
